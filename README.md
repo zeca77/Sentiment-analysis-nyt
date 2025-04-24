@@ -27,7 +27,7 @@ This project consists of several stages:
 2. Create and activate a virtual environment:
 To keep your dependencies isolated, create a virtual environment:
 
-bash
+ ```bash
 Copy
 Edit
 python -m venv .venv
@@ -35,20 +35,20 @@ Activate the virtual environment:
 
 On macOS/Linux:
 
-bash
+ ```bash
 Copy
 Edit
 source .venv/bin/activate
 On Windows:
 
-bash
+ ```bash
 Copy
 Edit
 .venv\Scripts\activate
 3. Install dependencies:
 Once the virtual environment is activated, install the required dependencies:
 
-bash
+ ```bash
 Copy
 Edit
 pip install -r requirements.txt
@@ -67,7 +67,7 @@ To use the API key in your code, you can either:
 
 Set it as an environment variable:
 
-bash
+ ```bash
 Copy
 Edit
 export NYT_API_KEY="your-api-key"
@@ -77,7 +77,7 @@ How to Use
 1. Fetching Articles from NYT API
 Run the script to fetch articles from the New York Times API:
 
-bash
+ ```bash
 Copy
 Edit
 python fetch_articles.py
@@ -86,7 +86,7 @@ This will retrieve articles based on the parameters defined in the script, such 
 2. Sentiment Analysis
 Once you have the articles, you can perform sentiment analysis. This is the next step in the pipeline:
 
-bash
+ ```bash
 Copy
 Edit
 python sentiment_analysis.py
