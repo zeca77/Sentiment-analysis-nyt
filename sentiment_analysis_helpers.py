@@ -7,4 +7,4 @@ def initialize_sentiment_analyzer():
 
 def get_sentiment_score(sentiment_analyzer, text):
     result = sentiment_analyzer(text)
-    return 1 if result[0]['label'] == 'POSITIVE' else 0
+    return result[0]['score'] if result[0]['label'] == 'POSITIVE' else -result[0]['score']
